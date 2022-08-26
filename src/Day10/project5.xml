@@ -12,4 +12,11 @@
         </classes>
     </test>
 
+    <test name = "Successfully Place Order Test">
+        <classes>
+            <class name = "Day10.Test.PlaceAnOrderFunctionality">
+            </class>
+        </classes>
+    </test>
+
 </suite>
