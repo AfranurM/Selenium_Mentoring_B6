@@ -15,14 +15,14 @@ public class LoginFunctionalityPositiveScenario extends BaseDriver {
 
         loginPageElements = new LoginPageElements(driver);
 
-        loginPageElements.emailInput.sendKeys("batch6@test.com");
+        loginPageElements.emailInput.sendKeys("batch6@testing.com");
         loginPageElements.passwordInput.sendKeys("batch6test");
         loginPageElements.loginButton.click();
 
         wait.until(ExpectedConditions.visibilityOf(loginPageElements.logoutButton));
 
         String actualAccountInfoTex = loginPageElements.accountInfo.getText();
-        String expectedAccountInfo = "batch6@test.com";
+        String expectedAccountInfo = "batch6@testing.com";
 
         Assert.assertEquals(actualAccountInfoTex, expectedAccountInfo);
 
